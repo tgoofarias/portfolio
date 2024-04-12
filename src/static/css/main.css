@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* NAV BAR */
+header {
+    display: flex;
+    padding: 25px;
+    background-color: #052625;
+    color: white;
+    font-size: 30px;
+}
+
+header div {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header div {
+        display: flex;
+        gap: 45px;
+    }
+}
