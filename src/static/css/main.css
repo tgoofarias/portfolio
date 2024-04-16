@@ -17,7 +17,27 @@ header div {
     display: none;
 }
 
+/* INTRO */
+.intro-container {
+    background-color: #052625;
+    color: white;
+    padding: 30px;
+}
+
+.intro-container div {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.intro-container div img {
+    width: 50px;
+}
+
 @media (min-width: 768px) {
+
+    /* NAV BAR */
     header {
         justify-content: space-between;
     }
@@ -25,5 +45,15 @@ header div {
     header div {
         display: flex;
         gap: 45px;
+    }
+
+    /* INTRO */
+    .intro-container {
+        padding: 100px;
+        padding-left: 150px;
+    }
+
+    .intro-container h1 {
+        font-size: 64px;
     }
 }

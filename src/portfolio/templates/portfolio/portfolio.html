@@ -1,6 +1,15 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<div>
+<div class="intro-container">
     <h1>Olá, sou Tiago<br>Software Developer</h1>
+    <div>
+        <a href="https://www.github.com/tgoofarias" target="_blank">
+            <img src="{% static 'images/icons/github-icon.png' %}" />
+        </a>
+        <a href="https://www.linkedin.com/in/tiagofariasbarbosa" target="_blank">
+            <img src="{% static 'images/icons/linkedin-icon.png' %}" />
+        </a>
+    </div>
 </div>
 {% endblock %}
