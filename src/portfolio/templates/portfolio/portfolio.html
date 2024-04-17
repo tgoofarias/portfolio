@@ -2,14 +2,13 @@
 {% load static %}
 {% block content %}
 <div class="intro-container">
-    <h1>Olá, sou Tiago<br>Software Developer</h1>
+    <h1>{{ portfolio.title }}<br>{{ portfolio.sub_title }}</h1>
     <div>
-        <a href="https://www.github.com/tgoofarias" target="_blank">
-            <img src="{% static 'images/icons/github-icon.png' %}" />
+        {% for social_media in social_medias %}
+        <a href="{{ social_media.link }}" target="_blank">
+            <img src="{{ social_media.image.url }}" />
         </a>
-        <a href="https://www.linkedin.com/in/tiagofariasbarbosa" target="_blank">
-            <img src="{% static 'images/icons/linkedin-icon.png' %}" />
-        </a>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
